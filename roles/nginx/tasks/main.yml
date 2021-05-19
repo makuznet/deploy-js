@@ -1,0 +1,12 @@
+---
+- name: conveying files via template
+  template:
+    src: "{{item.src_file}}"
+    dest: "{{item.dest_file}}"
+  loop:
+    - {
+        src_file: "nginx.conf.j2",
+        dest_file: "/etc/nginx/nginx.conf",
+      }
+  notify:
+    - reload_nginx
