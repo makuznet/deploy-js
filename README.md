@@ -3,10 +3,10 @@
 > This repo is a nodejs.org deployment report.    
 
 ## Defenitions
-Nodejs.org — web site JavaScript source code for training.
-NVM (nvm) — Node.js Version Manager.  
-Node.js — JavaScript interpreter framework. 
-NPM (npm) — Node.js Packet Manager (installed with Node.js).  
+Nodejs.org — web site JavaScript source code for training.  
+NVM (nvm) — Node.js Version Manager.    
+Node.js — JavaScript interpreter framework.   
+NPM (npm) — Node.js Packet Manager (installed with Node.js).    
 
 ## List of commands 
 ```shell
