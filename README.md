@@ -10,6 +10,7 @@ NPM (npm) — Node.js Packet Manager (installed with Node.js).
 
 ## List of commands 
 ```shell
+cd terraform-do
 terraform plan
 terraform apply --auto-approve
 ssh makuznet-at-gmail-com-nodejs.devops.rebrain.srwx.net -l root 
@@ -30,7 +31,7 @@ ssh makuznet-at-gmail-com-nodejs.devops.rebrain.srwx.net -l root
         cd ~
     apt -y install letsencrypt
     letsencrypt certonly --webroot -w /var/www/html -d makuznet-at-gmail-com-nodejs.devops.rebrain.srwx.net -m makuznet@gmail.com --agree-tos
-    vi /etc/nginx/nginx.conf
+    ansible-playbook -i terraform-do/inventory.yml playbooks/main.yml
     rm -i /etc/nginx/sites-enabled/default
     systemctl reload nginx
     exit
